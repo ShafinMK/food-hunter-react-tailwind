@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+#feature-header{
+    font-family: 'Great Vibes', cursive;
+}
+.feature-body{
+    font-family: 'Berkshire Swash', cursive;
+}
+hr{
+    border-top: 1px dotted gray;
+   width: 50%;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+    
+   
+}

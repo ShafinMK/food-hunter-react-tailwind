@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Gloria+Hallelujah&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Lobster&family=Poppins:wght@400;500;700&family=Roboto:wght@500&family=Tangerine&display=swap');
+
+.footer-font{
+    font-family: 'Lobster', cursive;
+}
+.textOverflow{
+    overflow-wrap: break-word;
+    inline-size: 235px;
+    /* border: 2px solid white; */
+}
+.wideText{
+    overflow-wrap: normal;
+    inline-size: auto;
+}
