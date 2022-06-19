@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Food from '../Food/Food';
+import ItemNotFound from '../ItemNotFound/ItemNotFound';
 import MenuHeader from '../MenuHeader/MenuHeader';
 
 const Menu = () => {
@@ -30,6 +31,9 @@ const Menu = () => {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchedText}`)
         .then(res =>  res.json())
         .then(data => setDisplayItems(data.meals))
+        .catch( error =>{
+            console.log(error.message);
+        })
         
     }, [searchedText]);
 console.log( displayItems);
@@ -45,14 +49,22 @@ console.log( displayItems);
             
             <div className='w-3/4 mx-auto'>
                 {/* grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 */}
+                {
+                    displayItems? <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-11 '>
 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-11 '>
+                        {displayItems.map(displayItem => <Food key = {displayItem.idMeal} displayItem ={displayItem}></Food>)}
+
+                    </div>:<ItemNotFound></ItemNotFound>
+
+                }
+
+                {/* <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-11 '>
                     {
                         
-                        displayItems.map(displayItem => <Food key = {displayItem.idMeal} displayItem ={displayItem}></Food>)
+                        displayItems?displayItems.map(displayItem => <Food key = {displayItem.idMeal} displayItem ={displayItem}></Food>): <ItemNotFound></ItemNotFound>
                         
                     }
-                </div>
+                </div> */}
             </div>
         </div>
     );
