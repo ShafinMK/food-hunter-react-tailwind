@@ -66,7 +66,7 @@ const SampleMenu = () => {
                 {/* card end */}
             </div>
             <div className='mt-8 flex justify-center'>
-                <Link to = '/menu'><button className='bg-yellow-400 text-black px-10 py-3 rounded-lg hover:shadow-2xl duration-500'>Go to menu<i className="fa-solid fa-arrow-right ml-2"></i></button></Link>
+                <Link to = '/menu'><button className='bg-yellow-400 text-black px-10 py-3 rounded-lg hover:shadow-2xl duration-500 kalam-font'>Go to menu<i className="fa-solid fa-arrow-right ml-2"></i></button></Link>
             </div>
         </div>
     );

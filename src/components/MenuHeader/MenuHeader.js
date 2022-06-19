@@ -12,11 +12,11 @@ const MenuHeader = () => {
                             <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold'>Eat, drink and live free. There’s no telling what might happen tomorrow.</h1>
                             <h3 className='text-xs md:text-sm lg:text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quidem est perferendis voluptatem aliquam perspiciatis ad inventore ut aspernatur accusantium.</h3>
 
-                            <div className='flex space-x-5'>
+                            <div className='flex justify-center md:justify-start space-x-5'>
                                 <Link to = '/home'>
-                                <button className='bg-orange-400 hover:bg-orange-600 hover:text-white rounded-xl px-2 py-4 md:px-4 text-gray-800 duration-500'>Back to Home</button>
+                                <button className='bg-lime-400 hover:bg-green-500 kalam-font font-bold  rounded-xl px-4 py-4  text-gray-800 duration-500 hover:scale-105'>Back to Home</button>
                                 </Link>
-                                <button className='bg-transparent ring-2  ring-white hover:bg-white hover:text-black rounded-xl px-2 py-4 md:px-4 text-white  duration-500'>Categories</button>
+                                <button className='bg-transparent ring-2  ring-white kalam-font font-bold hover:bg-white hover:text-black rounded-xl px-4 py-4  text-white  duration-500 hover:scale-105'>Reservation</button>
                             </div>
                         </div>
                     </div>

@@ -43,7 +43,7 @@ console.log( displayItems);
             <MenuHeader></MenuHeader>
             <h1 className='text-4xl text-center p-5 mt-3 category-font'>Menu</h1>
             <div className='mx-auto w-3/4 py-10'>
-                <input onKeyPress={handleSearch} type="text" name="" id="" className='w-full border border-red-500 bg-orange-50 p-5 rounded-full' placeholder='Search any recipe by name or any ingredient'/>
+                <input onKeyPress={handleSearch} type="text" name="" id="" className='w-full border border-red-100 bg-orange-50 px-4 py-2 lg:px-10 lg:py-4 rounded-full focus:outline-none' placeholder='Search here'/>
             </div>
 
             
