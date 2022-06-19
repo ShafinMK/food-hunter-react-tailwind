@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+.anton-font{
+    font-family: 'Anton', sans-serif;
+}
+
+.acme-font{
+    font-family: 'Acme', sans-serif;
+}

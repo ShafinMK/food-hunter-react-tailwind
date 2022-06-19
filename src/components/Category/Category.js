@@ -30,7 +30,7 @@ const Category = (props) => {
                                 <img src={strCategoryThumb} className="px-2" alt="" />
                             </div>
                             <div className="col-span-6  flex items-center justify-center" alt="" >
-                                <h1 className="text-center category-style text-4xl p-4 font-semibold ">{strCategory}</h1>
+                                <h1 className="text-center category-style text-3xl sm:text-4xl md:text-4xl p-4 font-semibold ">{strCategory}</h1>
                             </div>
                         </div>
                     </div>
